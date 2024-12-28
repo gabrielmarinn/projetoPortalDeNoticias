@@ -22,7 +22,7 @@
     /* Tipografia */
     --heading1: 800 24px/135% "Archivo", serif;
     --heading2: 800 16px/140% "Archivo", serif;
-    --heading3: 800 14px/140% "Archivo", serif;
+    --heading3: 600 14px/140% "Archivo", serif;
     --span: 600 14px/145% "Archivo", serif;
     --paragraph: 14px/160% "Archivo", serif;
 }

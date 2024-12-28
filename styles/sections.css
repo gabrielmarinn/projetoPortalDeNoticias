@@ -40,6 +40,12 @@
             /* Adicionando espaçamento interno */
             padding: 24px;
 
+            /* &:has (se o figcaption tem dentro dele). :has pseudo seletor para verificar se existe ou não oque passamos entre parenteses. Caso tenha ele aplica */
+            &:has(.text-lg){
+                /* Caso tenha aplique o espaçamento */
+                padding: 12px;
+            }
+
             h2 {
                 /* Adicionando espaçamento com margem */
                 margin-top: 8px;
