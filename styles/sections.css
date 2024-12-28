@@ -1,3 +1,35 @@
+section header {
+    /* Definindo borda em cima */
+    margin-top: 1px solid var(--stroke-color);
+    /* Espaçamento no eixo Y 12px em cima 24px em baixo*/
+    padding-block: 12px 24px;
+    /* Font */
+    font: var(--span);
+
+    a {
+        /* Ajustando posicao do link dentro do header */
+        justify-self: end;
+        /* Alinhando itens no eixo Y */
+        align-items: center;
+        /* Espaçamento entre os elementos */
+        gap: 8px;
+
+        /* Adicionando imagem de seta dentro do link */
+        span {
+            background-image: url(../assets/icons/ArrowRight.svg);
+            /* Largura */
+            width: 16px;
+            /* Altura */
+            height: 16px;
+        };
+
+        /* Mudando a imagem ao passar o mouse em cima */
+        &:hover span {
+            background-image: url(../assets/icons/ArrowRight-Hover.svg);
+        }
+    }
+}
+
 #featured {
     /* Estilizando todas as imagens que estao dentro da caixa */
     img {
@@ -50,6 +82,40 @@
                 /* Adicionando espaçamento com margem */
                 margin-top: 8px;
             }
+        }
+    }
+}
+
+#weekly {
+
+    /* Estilizando o primeiro nivel de div dentro da caixa #weekly */
+    &>div {
+        /* Definindo grid-template-columns para que as imagens fiquem uma ao lado da outra com o primeiro valor de 4 colunas e tamanho de 292px */
+        grid-template-columns: repeat(4, 292px);
+    }
+
+    img {
+        /* Altura da imagem */
+        height: 160px;
+    }
+
+    figure {
+        /* Definindo posicao como relative para figure para que mantenha sua posicao original do fluxo do documento  */
+        position: relative;
+
+        .content-tag {
+            /* Posicionando com absolute para ser encaixado em relacao da caixa mais proxima do elemento */
+            position: absolute;
+            /* Ajustando posicionamento de inicio do elemento */
+            top: 8px;
+            left: 8px;
+        }
+
+        p {
+            /* Espaçamento externo em cima */
+            margin-top: 8px;
+            /* Peso da font */
+            font-weight: 800;
         }
     }
 }
