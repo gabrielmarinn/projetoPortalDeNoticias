@@ -1,0 +1,40 @@
+#primary {
+    /* Adicionando espaçamento interno no eixo Y */
+    padding-block: 20px;
+
+    /* Estilizando a div dentro da #primary */
+
+    div {
+        /* Adicionando display flex */
+        display: flex;
+        /* Centralizando os elementos no eixo Y */
+        align-items: center;
+        /* Espaçamento entre os elementos */
+        gap: 8px;
+    }
+    
+    /* Nesting-css funcionalidade que permite aninhar seletores dentro de outros seletores */
+    
+    /* Estilizando o 2 elemento filho dentro da div que esta dentro de #primary  */
+
+    div:nth-child(2) {
+        /* Adicionado margem no eixo X */
+        margin-inline: auto;
+    }
+
+    /* Estilizando o 3 elemento filho dentro da div que esta dentro de #primary  */
+
+    div:nth-child(3) {
+        /* Alinhando o elemento no eixo X para o fim da caixa */
+        justify-self: end;
+    }
+}
+
+#secondary {
+    /* Adicionando espaçamento interno no eixo Y */
+    padding-block: 14px;
+    /* Adicionando borda */
+    border: solid 1px var(--stroke-color);
+    /* Removendo bordas do eixo X */
+    border-inline: none;
+}

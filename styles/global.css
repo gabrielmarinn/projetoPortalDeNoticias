@@ -27,6 +27,13 @@
     --paragraph: 14px/160% "Archivo", serif;
 }
 
+body {
+    /* Adicionando font ao body */
+    font: var(--paragraph);
+    color: var(--text-color-secondary);
+    background-color: var(--bg-color);
+}
+
 a {
     /* Retirando a decoração de link */
     text-decoration: none;
@@ -45,3 +52,25 @@ h3 {
     /* Herdando font do pai o qual estará dentro */
     font: inherit;
 }
+
+.container {
+    /* Ajustando largura maxima da caixa */
+    max-width: 1280px;
+    /* Adicionando espaçamento interno no eixo X */
+    padding-inline: 32px;
+    /* Adicionando espaçamento no eixo X com margem afim de centralizar os itens dentro da caixa */
+    margin-inline: auto ;
+}
+
+/* Utility-first termo utilizado para definir um estilo construido com pequenas utilitárias e reutilizáveis */
+
+.grid {
+    /* Adicionando display grid */
+    display: grid;
+}
+
+.grid-flow-col {
+    /* Modificando a escala grid para colunas (sendo um ao lado do outro) */
+    grid-auto-flow: column;
+}
+
