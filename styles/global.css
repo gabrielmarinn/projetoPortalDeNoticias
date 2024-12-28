@@ -72,3 +72,25 @@ main {
     margin-top: 40px;
 }
 
+.content-tag {
+    /* Definindo o display para que seja um bloco em linha */
+    display: inline-block;
+    /* Definindo cor de fundo */
+    background-color: var(--brand-color-dark);
+    /* Adicionando espaçamento interno 4px em cima e baixo, 8px lateral */
+    padding: 4px 8px;
+    /* Arredondamento de bordas */
+    border-radius: 4px;
+    /* Adicionando font */
+    font: var(--paragraph);
+    /* Transformando em caixa alta */
+    text-transform: uppercase;
+    /* Adicionando espaçamento entre as letras */
+    letter-spacing: 0.04em;
+    /* Adicionando cor */
+    color: var(--text-color-primary);
+    /* Adicionando box-shadow primeiro valor se move no eixo X, segundo valor no eixo Y,  terceiro valor espalhamento, por ultimo escolha de cor */
+    box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251);
+
+}
+

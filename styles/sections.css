@@ -8,4 +8,42 @@
         /* Arredondamento de bordas */
         border-radius: 4px;
     }
+
+    .card {
+        /* Position relative para que as configurações de dentro dele não transborde para o resto da pagina */
+        position: relative;
+        /* Escondendo qualquer transbordamento que passar da caixa */
+        overflow: hidden;
+        /* Adicionando  */
+        &::before {
+            /* Criando um conteudo vazio no css */
+            content: "";
+            /* Ajustando sua posição como absoluta */
+            position: absolute;
+            /* Ajustando o deslocamento do elemento */
+            inset: 0;
+            /* Ajustando para começar em 50% de cima para baixo */
+            top: 50%;
+            /* Adicionando degradê a imagem começando com 180 graus, primeira cor transparente saindo de 0% posterior a cor escolhida chegando a 100% */
+            background: linear-gradient(
+                180deg,
+                transparent 0%,
+                #020617 100%
+            );
+        }
+        /* Estilizando figcaption dentro do card */
+        figcaption {
+            /* Ajustando sua posicao como absoluta */
+            position: absolute;
+            /* Ajustando sua posicao dentro do card */
+            bottom: 0;
+            /* Adicionando espaçamento interno */
+            padding: 24px;
+
+            h2 {
+                /* Adicionando espaçamento com margem */
+                margin-top: 8px;
+            }
+        }
+    }
 }

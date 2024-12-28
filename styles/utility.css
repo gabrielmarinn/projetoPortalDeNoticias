@@ -19,3 +19,23 @@
     /* Espaçamento entre os elementos da caixa */
     gap: 16px;
 }
+
+.text-2xl {
+    /* Adicionando fonte */
+    font: var(--heading1);
+}
+
+.text-xl {
+    /* Adicionando fonte */
+    font: var(--heading2);
+}
+
+.text-lg {
+    /* Adicionando fonte */
+    font: var(--heading3);
+}
+
+.text-sm {
+    /* Adicionando fonte */
+    font: var(--paragraph);
+}
