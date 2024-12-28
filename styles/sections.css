@@ -75,7 +75,7 @@ section header {
             padding: 24px;
 
             /* &:has (se o figcaption tem dentro dele). :has pseudo seletor para verificar se existe ou não oque passamos entre parenteses. Caso tenha ele aplica */
-            &:has(.text-lg){
+            &:has(.text__lg){
                 /* Caso tenha aplique o espaçamento */
                 padding: 12px;
             }
@@ -107,7 +107,7 @@ section header {
         /* Definindo posicao como relative para figure para que mantenha sua posicao original do fluxo do documento  */
         position: relative;
 
-        .content-tag {
+        .content__tag {
             /* Posicionando com absolute para ser encaixado em relacao da caixa mais proxima do elemento */
             position: absolute;
             /* Ajustando posicionamento de inicio do elemento */

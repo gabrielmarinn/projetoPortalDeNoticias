@@ -10,32 +10,32 @@
     grid-auto-flow: column;
 }
 
-.grid-cols-2 {
+.grid__cols__2 {
     /* Criando 2 colunas com grid cada uma com o valor de 1 fração (50% da caixa)*/
     grid-template-columns: 1fr 1fr;
 }
 
-.gap-16 {
+.gap__16 {
     /* Espaçamento entre os elementos da caixa */
     gap: 16px;
 }
 
-.text-2xl {
+.text__2xl {
     /* Adicionando fonte */
     font: var(--heading1);
 }
 
-.text-xl {
+.text__xl {
     /* Adicionando fonte */
     font: var(--heading2);
 }
 
-.text-lg {
+.text__lg {
     /* Adicionando fonte */
     font: var(--heading3);
 }
 
-.text-sm {
+.text__sm {
     /* Adicionando fonte */
     font: var(--paragraph);
 }

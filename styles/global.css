@@ -83,7 +83,7 @@ main {
     "ai aside";
 }
 
-.content-tag {
+.content__tag {
     /* Definindo o display para que seja um bloco em linha */
     display: inline-block;
     /* Definindo cor de fundo */
