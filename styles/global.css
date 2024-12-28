@@ -26,3 +26,22 @@
     --span: 600 14px/145% "Archivo", serif;
     --paragraph: 14px/160% "Archivo", serif;
 }
+
+a {
+    /* Retirando a decoração de link */
+    text-decoration: none;
+    /* Herdando cor */
+    color: inherit;
+}
+
+/* Estilizando link ao passar o mouse em cima */
+a:hover {
+    color: var(--brand-color-light);
+}
+
+h1,
+h2,
+h3 {
+    /* Herdando font do pai o qual estará dentro */
+    font: inherit;
+}
