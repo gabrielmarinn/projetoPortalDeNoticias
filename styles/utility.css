@@ -5,7 +5,7 @@
     display: grid;
 }
 
-.grid-flow-col {
+.grid__flow__col {
     /* Modificando a escala grid para colunas (sendo um ao lado do outro) */
     grid-auto-flow: column;
 }
