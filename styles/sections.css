@@ -1,0 +1,11 @@
+#featured {
+    /* Estilizando todas as imagens que estao dentro da caixa */
+    img {
+        /* Ajustando altura */
+        height: 100%;
+        /* Redimensionando o recorte das imagens */
+        object-fit: cover;
+        /* Arredondamento de bordas */
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,21 @@
+/* Utility-first termo utilizado para definir um estilo construido com pequenas utilitárias e reutilizáveis */
+
+.grid {
+    /* Adicionando display grid */
+    display: grid;
+}
+
+.grid-flow-col {
+    /* Modificando a escala grid para colunas (sendo um ao lado do outro) */
+    grid-auto-flow: column;
+}
+
+.grid-cols-2 {
+    /* Criando 2 colunas com grid cada uma com o valor de 1 fração (50% da caixa)*/
+    grid-template-columns: 1fr 1fr;
+}
+
+.gap-16 {
+    /* Espaçamento entre os elementos da caixa */
+    gap: 16px;
+}

@@ -37,4 +37,6 @@
     border: solid 1px var(--stroke-color);
     /* Removendo bordas do eixo X */
     border-inline: none;
+    /* Adicionando espaçamento por igual nos elementos */
+    justify-content: space-between;
 }

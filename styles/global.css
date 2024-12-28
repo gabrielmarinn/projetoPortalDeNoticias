@@ -53,6 +53,11 @@ h3 {
     font: inherit;
 }
 
+img {
+    /* Estabelecendo tamanho limite para a imagem para ela se manter dentro da caixa que ela estiver */
+    max-width: 100%;
+}
+
 .container {
     /* Ajustando largura maxima da caixa */
     max-width: 1280px;
@@ -62,15 +67,8 @@ h3 {
     margin-inline: auto ;
 }
 
-/* Utility-first termo utilizado para definir um estilo construido com pequenas utilitárias e reutilizáveis */
-
-.grid {
-    /* Adicionando display grid */
-    display: grid;
-}
-
-.grid-flow-col {
-    /* Modificando a escala grid para colunas (sendo um ao lado do outro) */
-    grid-auto-flow: column;
+main {
+    /* Espaçamento em cima com margem */
+    margin-top: 40px;
 }
 
