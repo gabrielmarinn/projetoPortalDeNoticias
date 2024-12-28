@@ -31,6 +31,8 @@ section header {
 }
 
 #featured {
+    /* Atribuindo area do grid ao container */
+    grid-area: featured;
     /* Estilizando todas as imagens que estao dentro da caixa */
     img {
         /* Ajustando altura */
@@ -87,6 +89,8 @@ section header {
 }
 
 #weekly {
+    /* Atribuindo area do grid ao container */
+    grid-area: weekly;
 
     /* Estilizando o primeiro nivel de div dentro da caixa #weekly */
     &>div {
@@ -119,3 +123,46 @@ section header {
         }
     }
 }
+
+#ai {
+    /* Atribuindo area do grid ao container */
+    grid-area: ai;
+    /* Ajustando imagens */
+    img {
+        /* Altura */
+        width: 176px;
+        /* Aspecto de imagem  1/1 que seria quadrado */
+        aspect-ratio: 1/1;
+        /* Forçando ele cobrir toda a area da imagem */
+        object-fit: cover;
+    }
+
+    h3 {
+        /* Espaçamento externo em cima 8px baixo 4px */
+        margin-block: 8px 4px;
+    }
+}
+
+aside {
+    /* Atribuindo area do grid ao container */
+    grid-area: aside;
+}
+
+#more {
+    /* Espaçamento externo em cima */
+    margin-top: 32px;
+  
+    h3 {
+        /* Espaçamento externo em cima */
+      margin-top: 8px;
+    }
+  
+    img {
+        /* Largura */
+      width: 72px;
+      /* Aspecto de imagem de 1/1 */
+      aspect-ratio: 1/1;
+      /* Forçar o elemento a cobrir todo o quadrado */
+      object-fit: cover;
+    }
+  }
